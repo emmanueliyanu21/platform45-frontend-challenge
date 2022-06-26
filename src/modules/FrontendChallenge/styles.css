@@ -1,0 +1,22 @@
+
+.frontend-challenge-container{
+    display: flex;
+    overflow-y: hidden;
+    width: 100%;
+}
+.main-section{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+@media only screen and (max-width: 756px){
+    .frontend-challenge-container{
+    flex-wrap: wrap;
+    }
+    .main-section{
+        width: 100%;
+    }
+}

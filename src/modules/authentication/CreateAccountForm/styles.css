@@ -1,0 +1,98 @@
+
+.create-account-section{
+    height: 100%;
+    transition: ease-in 2s;
+}
+.create-account-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    height: 100%;
+    padding: 20px;
+    margin-top: 40px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-item-wrapper{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+form .form-item-wrapper .create-input{
+    max-width: 350px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: var(--pale-grey);
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 16px;
+}
+.label{
+    width: 150px;
+}
+.create-input::placeholder{
+    color: var(--cloudy-blue);
+    font-size: 16px;
+}
+.create-input:focus{
+    outline-color: var(--cloudy-blue);
+}
+
+.membership-item-wrapper{
+    margin-top: 50px;
+}
+
+.form-actions{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.form-actions button{
+    border: none;
+    height: 50px;
+    max-width: 150px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.form-actions .save{
+    margin-left: 20px;
+    color: white;
+    background-color:  var(--blue-green);
+}
+.form-actions .cancel{
+    background-color: var(--pale-grey);
+}
+@media only screen and (max-width: 756px){
+    form{
+        width: 80%;
+        margin-top: 30px;
+    }
+    form .form-item-wrapper{
+        display: block;
+    }
+    .create-input{
+        margin: 20px 0;
+    }
+    .form-actions{
+        margin-top: 0;
+        display: block;
+    }
+    .form-actions button{
+        margin-left: 0!important;
+        margin: 0 auto 10px;
+        max-width: 100%
+    }
+    .create-account-container{
+        margin: 10px 0!important;
+    }
+}

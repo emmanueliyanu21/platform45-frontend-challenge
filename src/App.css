@@ -1,0 +1,90 @@
+
+:root{
+  --yellow: #ffd300;
+  --tangerine: #ff9200;
+  --cloudy-blue: #cad7dd;
+  --blue-green: #49c8a8;
+  --pale-grey: #f5f8f9;
+  --charcoal-grey: #373d40;
+  --height: 100vh;
+  --open-animation-desktop: open-animation-desktop;
+  --open-animation-mobile: open-animation-mobile;
+  --close-animation: close-animation;
+}
+
+body{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.align-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes open-animation-desktop {
+  0% {
+      transform: scale(.3);
+      transform-origin: 0 0
+  }
+  25% {
+      transform: scale(.6);
+      transform-origin: 0 0
+  }
+  50% {
+      transform: scale(.8);
+      transform-origin: 0 0
+  }
+  100% {
+      transform: scale(1);
+      transform-origin: 0 0
+  }
+}
+
+
+@keyframes open-animation-mobile {
+  0% {
+      transform: scale(.3);
+      transform-origin: 50% 0
+  }
+  25% {
+      transform: scale(.6);
+      transform-origin: 50% 0
+  }
+  50% {
+      transform: scale(.8);
+      transform-origin: 50% 0
+  } 
+  100% {
+      transform: scale(1);
+      transform-origin: 50% 0
+  }
+}
+
+@keyframes close-animation {
+  0% {
+      transform: scale(1);
+  }
+
+  25% {
+      transform: scale(0.7);
+  }
+  50% {
+      transform: scale(0.4);
+  }
+  100% {
+      transform: scale(0.1);
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+body{
+  overflow: hidden;
+}
+}
