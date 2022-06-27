@@ -24,14 +24,12 @@
     display: flex;
     flex-wrap: wrap;
 }
-
-.membership-item-wrapper 
+ 
 .app-radio-group  .active{
     width: 55px;
     height: 55px;
     background-color: var(--cloudy-blue);
-}
-.membership-item-wrapper 
+} 
 .app-radio-group .active img{
     filter:  brightness(0) invert(1);
 }

@@ -16,10 +16,10 @@ function FrontendChallenge() {
     }else{
       setAnimation("close-animation")
     }
-    setTimeout(()=>{
+    // setTimeout(()=>{
       setContent(!showForm)
       setAnimation("")
-    }, 200)
+    // }, 200)
   }
 
     return (
